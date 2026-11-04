@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ascii-pic-cli"
+version = "0.1.0"
+description = "A simple CLI tool to convert images into ASCII art"
+readme = "README.md"
+authors = [
+    { name = "Cheung Ka Wing", email = "kwcheun325@my.cityu.edu.hk" }
+]
+dependencies = [
+    "Pillow>=9.0.0"
+]
+requires-python = ">=3.8"
+
+[project.scripts]
+ascii-pic = "ascii_pic.cli:main"
